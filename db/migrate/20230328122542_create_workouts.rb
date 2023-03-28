@@ -1,10 +1,10 @@
 class CreateWorkouts < ActiveRecord::Migration[7.0]
   def change
     create_table :workouts do |t|
-      t.string :name
-      t.boolean :weight
-      t.date :date
-      t.string :category
+      t.string :name, null:false
+      t.boolean :weight, null:false
+      t.date :date, null:false
+      t.string :category, null:false
 
       t.timestamps
     end
