@@ -511,3 +511,20 @@ Processing by ExerciseLogsController#show as */*
 Completed 404 Not Found in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 627)
 
 
+Started POST "/exercises" for ::1 at 2023-03-29 09:02:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>40, "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>40, "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 422 Unprocessable Entity in 113ms (ActiveRecord: 1.9ms | Allocations: 45405)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Workout must exist):
+  
+app/controllers/exercises_controller.rb:20:in `create'
