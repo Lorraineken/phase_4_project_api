@@ -1,0 +1,513 @@
+Started POST "/exercises" for ::1 at 2023-03-28 22:59:17 +0300
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20230328115032_create_users.rb
+20230328122542_create_workouts.rb
+20230328123854_create_exercises.rb
+20230328124155_create_exercise_logs.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230328115032)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar, "full_name" varchar, "password_digest" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230328115032"]]
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWorkouts (20230328122542)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "weight" boolean, "date" date, "category" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230328122542"]]
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateExercises (20230328123854)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "description" text, "workout_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ee53b1f0ea"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_exercises_on_workout_id" ON "exercises" ("workout_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230328123854"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateExerciseLogs (20230328124155)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "exercise_logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "exercise_id" integer NOT NULL, "duration" integer, "date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_2d20b50904"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_c1aea2d8c9"
+FOREIGN KEY ("exercise_id")
+  REFERENCES "exercises" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_exercise_logs_on_user_id" ON "exercise_logs" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_exercise_logs_on_exercise_id" ON "exercise_logs" ("exercise_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230328124155"]]
+  [1m[36mTRANSACTION (10.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-28 20:08:49.102730"], ["updated_at", "2023-03-28 20:08:49.102730"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/exercises" for ::1 at 2023-03-28 23:08:55 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExercisesController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "exercise"=>{}}
+Completed 400 Bad Request in 79ms (ActiveRecord: 0.4ms | Allocations: 20721)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: exercise):
+  
+app/controllers/exercises_controller.rb:52:in `exercise_params'
+app/controllers/exercises_controller.rb:17:in `create'
+Started POST "/exercises" for ::1 at 2023-03-28 23:09:18 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "exercise"=>{}}
+[31mUnpermitted parameters: :strength, :power_id, :hero_id, :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1d00b56b8>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"exercises", "action"=>"create", "exercise"=>{}} }[0m
+Completed 201 Created in 26ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 18554)
+
+
+Started GET "/exercises" for ::1 at 2023-03-28 23:09:36 +0300
+Processing by ExercisesController#index as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "exercise"=>{}}
+  [1m[36mExercise Load (0.2ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ app/controllers/exercises_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 683)
+
+
+Started GET "/exercises/1" for ::1 at 2023-03-28 23:09:43 +0300
+Processing by ExercisesController#show as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "id"=>"1", "exercise"=>{}}
+  [1m[36mExercise Load (0.2ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:47:in `find_exercise'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1297)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Exercise with 'id'=1):
+  
+app/controllers/exercises_controller.rb:47:in `find_exercise'
+app/controllers/exercises_controller.rb:8:in `show'
+Started GET "/exercises/1" for ::1 at 2023-03-28 23:11:28 +0300
+Processing by ExercisesController#show as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "id"=>"1", "exercise"=>{}}
+  [1m[36mExercise Load (0.2ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:47:in `find_exercise'
+Completed 404 Not Found in 3ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 671)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:15:40 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1dc6a1f48>, params: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 20ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 5703)
+
+
+Started PUT "/exercises/1" for ::1 at 2023-03-28 23:18:23 +0300
+Processing by ExercisesController#update as */*
+  Parameters: {"id"=>"1", "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>"1", "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mExercise Load (0.3ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:47:in `find_exercise'
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 505)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:18:34 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameters: :id, :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1d4085b08>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 13ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 2195)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:19:13 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1d01196b8>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 18ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 4759)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:19:28 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1d411c990>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 17ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 4765)
+
+
+Started GET "/exercises" for ::1 at 2023-03-28 23:19:38 +0300
+Processing by ExercisesController#index as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mExercise Load (0.2ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ app/controllers/exercises_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 657)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:20:49 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1d03466c0>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 17ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 4757)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:21:37 +0300
+  
+SyntaxError (/home/evalyn/Development/code/phase4/project-api/app/controllers/exercises_controller.rb:19: syntax error, unexpected local variable or method, expecting `end'
+...created_at, :updated_at] status: :created
+...                         ^~~~~~
+):
+  
+app/controllers/exercises_controller.rb:19: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/exercises_controller.rb:19: syntax error, unexpected local variable or method, expecting `end'
+Started POST "/exercises" for ::1 at 2023-03-28 23:21:45 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fd1dcb7a8d0>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 17ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 4763)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:22:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :exercise. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fade86e5da0>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:17:in `create'
+Completed 201 Created in 129ms (Views: 1.2ms | ActiveRecord: 1.8ms | Allocations: 43221)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:29:35 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :id. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fadf00985f8>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+[31mUnpermitted parameter: :id. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fadf00985f8>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 201 Created in 18ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 3880)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:32:38 +0300
+  
+SyntaxError (/home/evalyn/Development/code/phase4/project-api/app/controllers/exercises_controller.rb:23: syntax error, unexpected tLABEL, expecting `end'
+...alories, :description]) status: :created
+...                        ^~~~~~~
+):
+  
+app/controllers/exercises_controller.rb:23: syntax error, unexpected tLABEL, expecting `end'
+app/controllers/exercises_controller.rb:23: syntax error, unexpected tLABEL, expecting `end'
+Started POST "/exercises" for ::1 at 2023-03-28 23:32:47 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+[31mUnpermitted parameter: :id. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fadf4c833a0>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+[31mUnpermitted parameter: :id. Context: { controller: ExercisesController, action: create, request: #<ActionDispatch::Request:0x00007fadf4c833a0>, params: {"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "controller"=>"exercises", "action"=>"create", "exercise"=>{"id"=>1, "name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 201 Created in 22ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 5383)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:33:10 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 201 Created in 18ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 5142)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:33:23 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 201 Created in 24ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 5158)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:36:13 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+Completed 422 Unprocessable Entity in 12ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 3107)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:37:10 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+Completed 422 Unprocessable Entity in 12ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 3107)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:37:43 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:22:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 19ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 4611)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:38:21 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:18:in `create'
+Completed 422 Unprocessable Entity in 18ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 3107)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:38:34 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:22:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 21ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 4601)
+
+
+Started POST "/exercises" for ::1 at 2023-03-28 23:38:57 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 0.5ms | ActiveRecord: 2.7ms | Allocations: 4649)
+
+
+Started POST "/exercises" for ::1 at 2023-03-29 00:06:26 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 1808)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<ExercisesController:0x00000000018a10>):
+  
+app/controllers/exercises_controller.rb:18:in `create'
+Started POST "/exercises" for ::1 at 2023-03-29 00:07:20 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.8ms | Allocations: 2519)
+
+
+  
+NoMethodError (undefined method `exercises' for nil:NilClass):
+  
+app/controllers/exercises_controller.rb:18:in `create'
+Started POST "/exercises" for ::1 at 2023-03-29 00:08:59 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms | Allocations: 1715)
+
+
+  
+NoMethodError (undefined method `exercise' for nil:NilClass):
+  
+app/controllers/exercises_controller.rb:18:in `create'
+Started POST "/exercises" for ::1 at 2023-03-29 00:09:10 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.9ms | Allocations: 1714)
+
+
+  
+NoMethodError (undefined method `exercises' for nil:NilClass):
+  
+app/controllers/exercises_controller.rb:18:in `create'
+Started GET "/exercises" for ::1 at 2023-03-29 00:09:52 +0300
+Processing by ExercisesController#index as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 1115)
+
+
+  
+NoMethodError (undefined method `exercises' for nil:NilClass):
+  
+app/controllers/exercises_controller.rb:7:in `index'
+Started GET "/exercises" for ::1 at 2023-03-29 00:10:12 +0300
+Processing by ExercisesController#index as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mExercise Load (0.3ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ app/controllers/exercises_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 1.5ms | Allocations: 674)
+
+
+Started GET "/exercises/11" for ::1 at 2023-03-29 00:10:25 +0300
+Processing by ExercisesController#show as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "id"=>"11", "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mExercise Load (0.2ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:51:in `find_exercise'
+Completed 404 Not Found in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 629)
+
+
+Started POST "/exercises/" for ::1 at 2023-03-29 00:11:30 +0300
+Processing by ExercisesController#create as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise"=>{"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercises_controller.rb:20:in `create'
+Completed 201 Created in 16ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 4670)
+
+
+Started POST "/exerciselogs" for ::1 at 2023-03-29 00:25:01 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/exerciselogs"):
+  
+Started GET "/exerciselogs" for ::1 at 2023-03-29 00:25:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/exerciselogs"):
+  
+Started GET "/exercise_logs" for ::1 at 2023-03-29 00:25:38 +0300
+  
+SyntaxError (/home/evalyn/Development/code/phase4/project-api/app/controllers/exercise_logs_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/exercise_logs_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/exercise_logs_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/exercise_logs" for ::1 at 2023-03-29 00:26:17 +0300
+Processing by ExerciseLogsController#index as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise_log"=>{}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms | Allocations: 1701)
+
+
+  
+NoMethodError (undefined method `json' for #<ExerciseLogsController:0x00000000024fe0>
+Did you mean?  JSON):
+  
+app/controllers/exercise_logs_controller.rb:4:in `index'
+Started GET "/exercise_logs" for ::1 at 2023-03-29 00:26:31 +0300
+Processing by ExerciseLogsController#index as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "exercise_log"=>{}}
+  [1m[36mExerciseLog Load (0.2ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs"[0m
+  ↳ app/controllers/exercise_logs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 1.3ms | Allocations: 680)
+
+
+Started GET "/exercise_logs/1" for ::1 at 2023-03-29 00:26:43 +0300
+Processing by ExerciseLogsController#show as */*
+  Parameters: {"name"=>"Skip rope", "calories"=>"40", "description"=>" swinging a rope around your body and jumping over it as it passes under your feet.", "workout_id"=>1, "id"=>"1", "exercise_log"=>{}}
+  [1m[36mExerciseLog Load (0.2ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs" WHERE "exercise_logs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:8:in `show'
+Completed 404 Not Found in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 627)
+
+
