@@ -33,19 +33,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_124155) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "user_name"
-    t.string "full_name"
-    t.string "password_digest"
-    t.string "email"
+    t.string "user_name", null: false
+    t.string "full_name", null: false
+    t.string "password_digest", null: false
+    t.string "email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "workouts", force: :cascade do |t|
-    t.string "name"
-    t.boolean "weight"
-    t.date "date"
-    t.string "category"
+    t.string "name", null: false
+    t.boolean "weight", null: false
+    t.string "instructor", null: false
+    t.string "category", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
