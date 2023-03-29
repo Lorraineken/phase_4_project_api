@@ -1,4 +1,5 @@
 class ExerciseLogsController < ApplicationController
+    
 
     def index
         render json: ExerciseLog.all, status: :ok
