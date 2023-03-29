@@ -15,6 +15,12 @@ class WorkoutsController < ApplicationController
         render json: workout
     end
 
+    def update 
+        workout = Workout.find(params[:id])
+        workout.update!(workout_params)
+        render json: workout
+    end
+
 
    private 
 
