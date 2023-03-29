@@ -9,12 +9,12 @@ class WorkoutsController < ApplicationController
 
     def index 
         workout = Workout.all 
-        render json: workout
+        render json: workout,status: :ok
     end
 
     def show 
         workout = Workout.find(params[:id])
-        render json: workout
+        render json: workout, status: :ok
     end
 
     def update 
