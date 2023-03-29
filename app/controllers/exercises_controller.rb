@@ -17,11 +17,7 @@ class ExercisesController < ApplicationController
     def create
        # workout = Workout.find_by(id: exercise_params[:workout_id])
 
-<<<<<<< HEAD
         exercise = Exercise.create!(exercise_params)
-=======
-        exercise = Exercise.create(exercise_params)
->>>>>>> e4d6eff (Anything)
       # exercise.workout = workout
         if exercise 
             render json: exercise, status: :created
