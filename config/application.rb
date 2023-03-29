@@ -25,6 +25,11 @@ module Phase4ProjectApi
 
     # Configuration for the application, engines, and railties goes here.
     #
+    # Adding cookies and session middleware
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+
+
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #

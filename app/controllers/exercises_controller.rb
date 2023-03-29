@@ -29,7 +29,8 @@ class ExercisesController < ApplicationController
     def update
         exercise = find_exercise
         if exercise 
-            exercise = Exercise.update(exercise_params)
+            exercise = Exercise.update!(exercise_params)
+            render json: exercise, status: :accepted
         else 
             render json: {error: "Problem updating exercise"}, status: :unprocessable_entity
         end
