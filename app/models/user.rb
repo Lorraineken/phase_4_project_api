@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+     has_secure_password
+
     has_many :exercise_logs
     has_many :workouts, through: :exercise_logs
 
