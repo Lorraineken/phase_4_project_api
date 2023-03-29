@@ -1,4 +1,6 @@
 class ExercisesController < ApplicationController
+    before_action :authorize
+    skip_before_action :authorize, only:[:create, :update, :destroy]
 
     def index
         exercises = Exercise.all 
