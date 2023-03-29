@@ -4,5 +4,5 @@ class Exercise < ApplicationRecord
 
   validates :name, presence: true
   validates :description, presence: true, length: { minimum: 20 }
-  validates :calories, presence: true
+  validates :calories, presence: true, numericality: {only_integer: true}
 end
