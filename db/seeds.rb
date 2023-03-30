@@ -14,6 +14,21 @@ workout_names = [  "CrossFit",  "Spin class",  "Yoga",  "Pilates",  "Zumba",  "B
   )
 end
 
+# create 45 exercises
+45.times do |n|
+    # select a random workout id from 1 to 15
+    workout_id = rand(1..15)
+    
+    # create the exercise with a unique name and description
+    Exercise.create!(
+      name: "Exercise #{n+1} for Workout #{workout_id}",
+      calories: rand(50..500),
+      description: "This is exercise #{n+1} for Workout #{workout_id}. It is a #{['beginner', 'intermediate', 'advanced'].sample} level exercise that targets the #{['arms', 'legs', 'core', 'back', 'glutes'].sample}.",
+      workout_id: workout_id
+    )
+  end
+  
+
 
 
 
