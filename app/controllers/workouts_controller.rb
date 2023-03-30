@@ -14,7 +14,7 @@ class WorkoutsController < ApplicationController
 
     def show 
         workout = Workout.find(params[:id])
-        render json: workout, status: :ok
+        render json: workout, include: :exercises, status: :ok
     end
 
     def update 
