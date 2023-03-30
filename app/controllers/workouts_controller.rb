@@ -12,9 +12,9 @@ class WorkoutsController < ApplicationController
         render json: workout,status: :ok
     end
 
-    def show 
+    def show
         workout = Workout.find(params[:id])
-        render json: workout, include: :exercises, status: :ok
+        render json: workout, serializer: ShowExerciseSerializer, status: :ok
     end
 
     def update 
