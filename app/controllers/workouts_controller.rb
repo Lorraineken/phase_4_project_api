@@ -40,7 +40,7 @@ class WorkoutsController < ApplicationController
    end
 
    def workout_not_found 
-    render json: { "error": "Hero not found"}, status: :not_found
+    render json: { "error": "Workout not found"}, status: :not_found
    end
 
 end
