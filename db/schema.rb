@@ -13,13 +13,13 @@
 ActiveRecord::Schema[7.0].define(version: 2023_03_28_124155) do
   create_table "exercise_logs", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.integer "exercise_id", null: false
+    t.integer "workout_id", null: false
     t.integer "duration"
     t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["exercise_id"], name: "index_exercise_logs_on_exercise_id"
     t.index ["user_id"], name: "index_exercise_logs_on_user_id"
+    t.index ["workout_id"], name: "index_exercise_logs_on_workout_id"
   end
 
   create_table "exercises", force: :cascade do |t|
@@ -50,7 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_124155) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "exercise_logs", "exercises"
   add_foreign_key "exercise_logs", "users"
+  add_foreign_key "exercise_logs", "workouts"
   add_foreign_key "exercises", "workouts"
 end
