@@ -813,3 +813,104 @@ Processing by UsersController#create as */*
 Completed 201 Created in 289ms (Views: 0.3ms | ActiveRecord: 13.1ms | Allocations: 2271)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "HIIT"], ["weight", 1], ["instructor", "Perla Conroy DDS"], ["category", "Cardio"], ["created_at", "2023-03-30 08:06:38.608602"], ["updated_at", "2023-03-30 08:06:38.608602"]]
+  [1m[36mTRANSACTION (119.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "HIIT"], ["weight", 0], ["instructor", "Alline Mitchell DO"], ["category", "Strength"], ["created_at", "2023-03-30 08:06:38.735398"], ["updated_at", "2023-03-30 08:06:38.735398"]]
+  [1m[36mTRANSACTION (99.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yoga"], ["weight", 1], ["instructor", "Latrisha Orn"], ["category", "Strength"], ["created_at", "2023-03-30 08:06:38.845766"], ["updated_at", "2023-03-30 08:06:38.845766"]]
+  [1m[36mTRANSACTION (99.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yoga"], ["weight", 1], ["instructor", "Leroy Reinger"], ["category", "Cardio"], ["created_at", "2023-03-30 08:06:38.956758"], ["updated_at", "2023-03-30 08:06:38.956758"]]
+  [1m[36mTRANSACTION (164.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yoga"], ["weight", 1], ["instructor", "Dolly Torphy"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:39.130949"], ["updated_at", "2023-03-30 08:06:39.130949"]]
+  [1m[36mTRANSACTION (94.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Spin class"], ["weight", 1], ["instructor", "Dreama Heidenreich Esq."], ["category", "Strength"], ["created_at", "2023-03-30 08:06:39.231725"], ["updated_at", "2023-03-30 08:06:39.231725"]]
+  [1m[36mTRANSACTION (132.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Swimming"], ["weight", 0], ["instructor", "Alfonzo Hettinger II"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:39.372952"], ["updated_at", "2023-03-30 08:06:39.372952"]]
+  [1m[36mTRANSACTION (855.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Spin class"], ["weight", 1], ["instructor", "Juana Quitzon MD"], ["category", "Cardio"], ["created_at", "2023-03-30 08:06:40.239460"], ["updated_at", "2023-03-30 08:06:40.239460"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Barre"], ["weight", 1], ["instructor", "Danyell Braun IV"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:40.349943"], ["updated_at", "2023-03-30 08:06:40.349943"]]
+  [1m[36mTRANSACTION (98.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Swimming"], ["weight", 0], ["instructor", "Antione Connelly"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:40.460649"], ["updated_at", "2023-03-30 08:06:40.460649"]]
+  [1m[36mTRANSACTION (99.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "HIIT"], ["weight", 1], ["instructor", "Anthony Ferry MD"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:40.571664"], ["updated_at", "2023-03-30 08:06:40.571664"]]
+  [1m[36mTRANSACTION (110.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Swimming"], ["weight", 0], ["instructor", "Gregory Johnston"], ["category", "Strength"], ["created_at", "2023-03-30 08:06:40.693441"], ["updated_at", "2023-03-30 08:06:40.693441"]]
+  [1m[36mTRANSACTION (109.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Running"], ["weight", 0], ["instructor", "Daryl Kshlerin"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:40.814406"], ["updated_at", "2023-03-30 08:06:40.814406"]]
+  [1m[36mTRANSACTION (110.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "CrossFit"], ["weight", 1], ["instructor", "Normand Mann"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:40.936290"], ["updated_at", "2023-03-30 08:06:40.936290"]]
+  [1m[36mTRANSACTION (110.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Barre"], ["weight", 0], ["instructor", "Deana Emmerich"], ["category", "Yoga"], ["created_at", "2023-03-30 08:06:41.057924"], ["updated_at", "2023-03-30 08:06:41.057924"]]
+  [1m[36mTRANSACTION (110.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.3ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 1 for Workout 15"], ["calories", 429], ["description", "This is exercise 1 for Workout 15. It is a beginner level exercise that targets the glutes."], ["workout_id", 15], ["created_at", "2023-03-30 08:06:41.242024"], ["updated_at", "2023-03-30 08:06:41.242024"]]
+  [1m[36mTRANSACTION (109.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 2 for Workout 11"], ["calories", 156], ["description", "This is exercise 2 for Workout 11. It is a advanced level exercise that targets the back."], ["workout_id", 11], ["created_at", "2023-03-30 08:06:41.363952"], ["updated_at", "2023-03-30 08:06:41.363952"]]
+  [1m[36mTRANSACTION (105.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 3 for Workout 4"], ["calories", 67], ["description", "This is exercise 3 for Workout 4. It is a intermediate level exercise that targets the legs."], ["workout_id", 4], ["created_at", "2023-03-30 08:06:41.487190"], ["updated_at", "2023-03-30 08:06:41.487190"]]
+  [1m[36mTRANSACTION (159.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 4 for Workout 5"], ["calories", 134], ["description", "This is exercise 4 for Workout 5. It is a intermediate level exercise that targets the legs."], ["workout_id", 5], ["created_at", "2023-03-30 08:06:41.660898"], ["updated_at", "2023-03-30 08:06:41.660898"]]
+  [1m[36mTRANSACTION (107.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 5 for Workout 15"], ["calories", 411], ["description", "This is exercise 5 for Workout 15. It is a advanced level exercise that targets the legs."], ["workout_id", 15], ["created_at", "2023-03-30 08:06:41.784479"], ["updated_at", "2023-03-30 08:06:41.784479"]]
+  [1m[36mTRANSACTION (105.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 6 for Workout 5"], ["calories", 213], ["description", "This is exercise 6 for Workout 5. It is a beginner level exercise that targets the arms."], ["workout_id", 5], ["created_at", "2023-03-30 08:06:41.906011"], ["updated_at", "2023-03-30 08:06:41.906011"]]
+  [1m[36mTRANSACTION (125.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 7 for Workout 9"], ["calories", 284], ["description", "This is exercise 7 for Workout 9. It is a intermediate level exercise that targets the core."], ["workout_id", 9], ["created_at", "2023-03-30 08:06:42.048605"], ["updated_at", "2023-03-30 08:06:42.048605"]]
+  [1m[36mTRANSACTION (1086.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.3ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 8 for Workout 8"], ["calories", 234], ["description", "This is exercise 8 for Workout 8. It is a advanced level exercise that targets the core."], ["workout_id", 8], ["created_at", "2023-03-30 08:06:43.146268"], ["updated_at", "2023-03-30 08:06:43.146268"]]
+  [1m[36mTRANSACTION (283.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 9 for Workout 14"], ["calories", 93], ["description", "This is exercise 9 for Workout 14. It is a beginner level exercise that targets the back."], ["workout_id", 14], ["created_at", "2023-03-30 08:06:43.442862"], ["updated_at", "2023-03-30 08:06:43.442862"]]
+  [1m[36mTRANSACTION (237.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 10 for Workout 5"], ["calories", 262], ["description", "This is exercise 10 for Workout 5. It is a beginner level exercise that targets the core."], ["workout_id", 5], ["created_at", "2023-03-30 08:06:43.695190"], ["updated_at", "2023-03-30 08:06:43.695190"]]
+  [1m[36mTRANSACTION (180.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 11 for Workout 8"], ["calories", 329], ["description", "This is exercise 11 for Workout 8. It is a advanced level exercise that targets the arms."], ["workout_id", 8], ["created_at", "2023-03-30 08:06:43.891786"], ["updated_at", "2023-03-30 08:06:43.891786"]]
+  [1m[36mTRANSACTION (143.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 12 for Workout 3"], ["calories", 83], ["description", "This is exercise 12 for Workout 3. It is a intermediate level exercise that targets the back."], ["workout_id", 3], ["created_at", "2023-03-30 08:06:44.052121"], ["updated_at", "2023-03-30 08:06:44.052121"]]
+  [1m[36mTRANSACTION (193.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.7ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 13 for Workout 10"], ["calories", 381], ["description", "This is exercise 13 for Workout 10. It is a beginner level exercise that targets the legs."], ["workout_id", 10], ["created_at", "2023-03-30 08:06:44.261524"], ["updated_at", "2023-03-30 08:06:44.261524"]]
+  [1m[36mTRANSACTION (106.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
