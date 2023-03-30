@@ -1,5 +1,5 @@
 class ExerciseLogsController < ApplicationController
-    
+    before_action :authorize
 
     def index
         render json: ExerciseLog.all, status: :ok
