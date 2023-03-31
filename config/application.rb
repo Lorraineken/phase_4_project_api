@@ -24,7 +24,14 @@ module Phase4ProjectApi
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
-    #
+    #Accepting cross-origin
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      end
+    end
+
     # Adding cookies and session middleware
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
