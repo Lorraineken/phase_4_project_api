@@ -6,9 +6,10 @@ class ExerciseLogsController < ApplicationController
     end
 
     def create
-        log = ExerciseLog.create!(log_params)
-        # log.user_id = session[:user_id]
-        if log
+        log = ExerciseLog.new(log_params)
+        log.user_id = session[:user_id]
+        log.save
+        if log.valid?
             render json: log, status: :ok
         else
             render json: {error: "Exercise log not create"}
@@ -47,7 +48,7 @@ end
 
     private
     def log_params
-        params.permit(user_id = session[:user_id], :exercise_id, :duration, :date)
+        params.permit( :workout_id, :duration, :date)
     end
     
 end

@@ -858,3 +858,662 @@ FOREIGN KEY ("workout_id")
   [1m[36mTRANSACTION (70.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Swimming"], ["weight", 1], ["instructor", "Sylvester Bosco"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:40.316022"], ["updated_at", "2023-03-30 11:32:40.316022"]]
+  [1m[36mTRANSACTION (129.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yoga"], ["weight", 1], ["instructor", "Lakenya Jast"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:40.450256"], ["updated_at", "2023-03-30 11:32:40.450256"]]
+  [1m[36mTRANSACTION (73.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kickboxing"], ["weight", 1], ["instructor", "Amb. Joselyn Bode"], ["category", "Cardio"], ["created_at", "2023-03-30 11:32:40.531095"], ["updated_at", "2023-03-30 11:32:40.531095"]]
+  [1m[36mTRANSACTION (72.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "HIIT"], ["weight", 1], ["instructor", "Courtney Schultz"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:40.609948"], ["updated_at", "2023-03-30 11:32:40.609948"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Spin class"], ["weight", 1], ["instructor", "Trang Schowalter DC"], ["category", "Strength"], ["created_at", "2023-03-30 11:32:40.714548"], ["updated_at", "2023-03-30 11:32:40.714548"]]
+  [1m[36mTRANSACTION (192.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Weightlifting"], ["weight", 1], ["instructor", "Violeta Bashirian"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:40.915872"], ["updated_at", "2023-03-30 11:32:40.915872"]]
+  [1m[36mTRANSACTION (66.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bootcamp"], ["weight", 1], ["instructor", "Chauncey Swaniawski"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:40.995503"], ["updated_at", "2023-03-30 11:32:40.995503"]]
+  [1m[36mTRANSACTION (81.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kickboxing"], ["weight", 0], ["instructor", "Whitley O'Conner"], ["category", "Cardio"], ["created_at", "2023-03-30 11:32:41.087878"], ["updated_at", "2023-03-30 11:32:41.087878"]]
+  [1m[36mTRANSACTION (67.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Barre"], ["weight", 0], ["instructor", "Heriberto Robel"], ["category", "Cardio"], ["created_at", "2023-03-30 11:32:41.165612"], ["updated_at", "2023-03-30 11:32:41.165612"]]
+  [1m[36mTRANSACTION (112.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cycling"], ["weight", 0], ["instructor", "Katharina Jakubowski"], ["category", "Strength"], ["created_at", "2023-03-30 11:32:41.287655"], ["updated_at", "2023-03-30 11:32:41.287655"]]
+  [1m[36mTRANSACTION (76.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Weightlifting"], ["weight", 1], ["instructor", "Louann O'Hara"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:41.375218"], ["updated_at", "2023-03-30 11:32:41.375218"]]
+  [1m[36mTRANSACTION (93.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cycling"], ["weight", 1], ["instructor", "Wendy Gutkowski"], ["category", "Yoga"], ["created_at", "2023-03-30 11:32:41.478157"], ["updated_at", "2023-03-30 11:32:41.478157"]]
+  [1m[36mTRANSACTION (83.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Spin class"], ["weight", 0], ["instructor", "Fr. Lane Bogisich"], ["category", "Cardio"], ["created_at", "2023-03-30 11:32:41.570847"], ["updated_at", "2023-03-30 11:32:41.570847"]]
+  [1m[36mTRANSACTION (83.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kickboxing"], ["weight", 0], ["instructor", "Tristan Mosciski Ret."], ["category", "Strength"], ["created_at", "2023-03-30 11:32:41.664092"], ["updated_at", "2023-03-30 11:32:41.664092"]]
+  [1m[36mTRANSACTION (329.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "weight", "instructor", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Weightlifting"], ["weight", 0], ["instructor", "Garry Brakus"], ["category", "Cardio"], ["created_at", "2023-03-30 11:32:42.006995"], ["updated_at", "2023-03-30 11:32:42.006995"]]
+  [1m[36mTRANSACTION (750.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 1 for Workout 6"], ["calories", 176], ["description", "This is exercise 1 for Workout 6. It is a beginner level exercise that targets the glutes."], ["workout_id", 6], ["created_at", "2023-03-30 11:32:42.867227"], ["updated_at", "2023-03-30 11:32:42.867227"]]
+  [1m[36mTRANSACTION (133.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.7ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 2 for Workout 7"], ["calories", 154], ["description", "This is exercise 2 for Workout 7. It is a intermediate level exercise that targets the arms."], ["workout_id", 7], ["created_at", "2023-03-30 11:32:43.015292"], ["updated_at", "2023-03-30 11:32:43.015292"]]
+  [1m[36mTRANSACTION (77.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.6ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 3 for Workout 9"], ["calories", 387], ["description", "This is exercise 3 for Workout 9. It is a intermediate level exercise that targets the core."], ["workout_id", 9], ["created_at", "2023-03-30 11:32:43.107960"], ["updated_at", "2023-03-30 11:32:43.107960"]]
+  [1m[36mTRANSACTION (78.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.7ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 4 for Workout 12"], ["calories", 373], ["description", "This is exercise 4 for Workout 12. It is a advanced level exercise that targets the glutes."], ["workout_id", 12], ["created_at", "2023-03-30 11:32:43.202563"], ["updated_at", "2023-03-30 11:32:43.202563"]]
+  [1m[36mTRANSACTION (76.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.7ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 5 for Workout 7"], ["calories", 192], ["description", "This is exercise 5 for Workout 7. It is a beginner level exercise that targets the core."], ["workout_id", 7], ["created_at", "2023-03-30 11:32:43.291510"], ["updated_at", "2023-03-30 11:32:43.291510"]]
+  [1m[36mTRANSACTION (142.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 6 for Workout 1"], ["calories", 217], ["description", "This is exercise 6 for Workout 1. It is a beginner level exercise that targets the core."], ["workout_id", 1], ["created_at", "2023-03-30 11:32:43.451117"], ["updated_at", "2023-03-30 11:32:43.451117"]]
+  [1m[36mTRANSACTION (102.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExercise Create (1.0ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 7 for Workout 6"], ["calories", 107], ["description", "This is exercise 7 for Workout 6. It is a intermediate level exercise that targets the glutes."], ["workout_id", 6], ["created_at", "2023-03-30 11:32:43.569854"], ["updated_at", "2023-03-30 11:32:43.569854"]]
+  [1m[36mTRANSACTION (102.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 8 for Workout 1"], ["calories", 476], ["description", "This is exercise 8 for Workout 1. It is a advanced level exercise that targets the arms."], ["workout_id", 1], ["created_at", "2023-03-30 11:32:43.686960"], ["updated_at", "2023-03-30 11:32:43.686960"]]
+  [1m[36mTRANSACTION (151.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 9 for Workout 5"], ["calories", 231], ["description", "This is exercise 9 for Workout 5. It is a advanced level exercise that targets the back."], ["workout_id", 5], ["created_at", "2023-03-30 11:32:43.853659"], ["updated_at", "2023-03-30 11:32:43.853659"]]
+  [1m[36mTRANSACTION (84.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.7ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 10 for Workout 7"], ["calories", 107], ["description", "This is exercise 10 for Workout 7. It is a beginner level exercise that targets the core."], ["workout_id", 7], ["created_at", "2023-03-30 11:32:43.953538"], ["updated_at", "2023-03-30 11:32:43.953538"]]
+  [1m[36mTRANSACTION (114.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mExercise Create (1.0ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 11 for Workout 7"], ["calories", 173], ["description", "This is exercise 11 for Workout 7. It is a beginner level exercise that targets the core."], ["workout_id", 7], ["created_at", "2023-03-30 11:32:44.085945"], ["updated_at", "2023-03-30 11:32:44.085945"]]
+  [1m[36mTRANSACTION (94.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 12 for Workout 11"], ["calories", 261], ["description", "This is exercise 12 for Workout 11. It is a beginner level exercise that targets the glutes."], ["workout_id", 11], ["created_at", "2023-03-30 11:32:44.201549"], ["updated_at", "2023-03-30 11:32:44.201549"]]
+  [1m[36mTRANSACTION (98.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mExercise Create (1.2ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 13 for Workout 8"], ["calories", 87], ["description", "This is exercise 13 for Workout 8. It is a advanced level exercise that targets the core."], ["workout_id", 8], ["created_at", "2023-03-30 11:32:44.320020"], ["updated_at", "2023-03-30 11:32:44.320020"]]
+  [1m[36mTRANSACTION (94.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.8ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 14 for Workout 12"], ["calories", 484], ["description", "This is exercise 14 for Workout 12. It is a beginner level exercise that targets the back."], ["workout_id", 12], ["created_at", "2023-03-30 11:32:44.433331"], ["updated_at", "2023-03-30 11:32:44.433331"]]
+  [1m[36mTRANSACTION (95.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mExercise Create (1.0ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 15 for Workout 15"], ["calories", 471], ["description", "This is exercise 15 for Workout 15. It is a intermediate level exercise that targets the core."], ["workout_id", 15], ["created_at", "2023-03-30 11:32:44.552378"], ["updated_at", "2023-03-30 11:32:44.552378"]]
+  [1m[36mTRANSACTION (93.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExercise Create (1.0ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 16 for Workout 6"], ["calories", 386], ["description", "This is exercise 16 for Workout 6. It is a beginner level exercise that targets the glutes."], ["workout_id", 6], ["created_at", "2023-03-30 11:32:44.669972"], ["updated_at", "2023-03-30 11:32:44.669972"]]
+  [1m[36mTRANSACTION (91.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 17 for Workout 6"], ["calories", 369], ["description", "This is exercise 17 for Workout 6. It is a beginner level exercise that targets the legs."], ["workout_id", 6], ["created_at", "2023-03-30 11:32:44.781702"], ["updated_at", "2023-03-30 11:32:44.781702"]]
+  [1m[36mTRANSACTION (115.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExercise Create (0.9ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "calories", "description", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Exercise 18 for Workout 6"], ["calories", 479], ["description", "This is exercise 18 for Workout 6. It is a beginner level exercise that targets the legs."], ["workout_id", 6], ["created_at", "2023-03-30 11:32:44.911310"], ["updated_at", "2023-03-30 11:32:44.911310"]]
+  [1m[36mTRANSACTION (839.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/workouts" for 127.0.0.1 at 2023-03-30 15:14:55 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:12:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.78ms)
+Completed 200 OK in 181ms (Views: 91.1ms | ActiveRecord: 2.6ms | Allocations: 50803)
+
+
+Started GET "/workouts/1" for 127.0.0.1 at 2023-03-30 15:15:09 +0300
+Processing by WorkoutsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:16:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers]   [1m[36mExercise Load (0.3ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises" WHERE "exercises"."workout_id" = ?[0m  [["workout_id", 1]]
+[active_model_serializers]   ↳ app/controllers/workouts_controller.rb:17:in `show'
+[active_model_serializers] Rendered ShowExerciseSerializer with ActiveModelSerializers::Adapter::Attributes (101.13ms)
+Completed 200 OK in 254ms (Views: 117.2ms | ActiveRecord: 2.1ms | Allocations: 28244)
+
+
+Started GET "/exercises" for 127.0.0.1 at 2023-03-30 15:15:46 +0300
+Processing by ExercisesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 1151)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-30 15:19:20 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user_name"=>"lorr", "full_name"=>"Lorraine K", "email"=>"lorr@mail.com", "password"=>"[FILTERED]", "user"=>{"user_name"=>"lorr", "full_name"=>"Lorraine K", "email"=>"lorr@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007fd55400a790>, params: {"user_name"=>"lorr", "full_name"=>"Lorraine K", "email"=>"lorr@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"user_name"=>"lorr", "full_name"=>"Lorraine K", "email"=>"lorr@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "full_name", "password_digest", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_name", "lorr"], ["full_name", "Lorraine K"], ["password_digest", "[FILTERED]"], ["email", "lorr@mail.com"], ["created_at", "2023-03-30 12:19:21.199308"], ["updated_at", "2023-03-30 12:19:21.199308"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (107.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 201 Created in 457ms (Views: 21.5ms | ActiveRecord: 111.0ms | Allocations: 17963)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-30 15:19:56 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"user_name"=>"lorr", "password"=>"[FILTERED]", "session"=>{"user_name"=>"lorr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "lorr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 201 Created in 310ms (Views: 1.9ms | ActiveRecord: 0.8ms | Allocations: 1441)
+
+
+Started GET "/exercises" for 127.0.0.1 at 2023-03-30 15:20:11 +0300
+Processing by ExercisesController#index as */*
+  Parameters: {"user_name"=>"lorr", "password"=>"[FILTERED]", "exercise"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mExercise Load (0.4ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.19ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 3752)
+
+
+  
+NoMethodError (undefined method `new' for :workout:Symbol
+Did you mean?  next):
+  
+app/controllers/exercises_controller.rb:7:in `index'
+Started GET "/exercises" for 127.0.0.1 at 2023-03-30 15:22:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExercisesController#index as */*
+  Parameters: {"user_name"=>"lorr", "password"=>"[FILTERED]", "exercise"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mExercise Load (0.3ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (83.79ms)
+Completed 200 OK in 250ms (Views: 170.9ms | ActiveRecord: 4.4ms | Allocations: 101779)
+
+
+Started GET "/exercises/1" for 127.0.0.1 at 2023-03-30 15:24:30 +0300
+Processing by ExercisesController#show as */*
+  Parameters: {"user_name"=>"lorr", "password"=>"[FILTERED]", "id"=>"1", "exercise"=>{}}
+  [1m[36mExercise Load (0.8ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercises_controller.rb:54:in `find_exercise'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers]   [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:13:in `show'
+[active_model_serializers] Rendered ExerciseSerializer with ActiveModelSerializers::Adapter::Attributes (9.68ms)
+Completed 200 OK in 35ms (Views: 16.1ms | ActiveRecord: 1.5ms | Allocations: 2379)
+
+
+Started GET "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:25:47 +0300
+Processing by ExerciseLogsController#index as */*
+  Parameters: {"user_name"=>"lorr", "password"=>"[FILTERED]", "exercise_log"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mExerciseLog Load (0.4ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs"[0m
+  ↳ app/controllers/exercise_logs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 1.3ms | Allocations: 1419)
+
+
+Started GET "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:30:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#index as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mExerciseLog Load (0.6ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs"[0m
+  ↳ app/controllers/exercise_logs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 139ms (Views: 69.0ms | ActiveRecord: 2.9ms | Allocations: 43593)
+
+
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:31:10 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f9e3855b468>, params: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+Completed 422 Unprocessable Entity in 1743ms (ActiveRecord: 1.1ms | Allocations: 742960)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist, Exercise must exist):
+  
+app/controllers/exercise_logs_controller.rb:9:in `create'
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:32:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f4194556b08>, params: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+Completed 422 Unprocessable Entity in 1635ms (ActiveRecord: 2.1ms | Allocations: 747937)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist, Workout must exist):
+  
+app/controllers/exercise_logs_controller.rb:9:in `create'
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:32:42 +0300
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameters: :user_id, :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f418c016628>, params: {"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+Completed 422 Unprocessable Entity in 21ms (ActiveRecord: 0.5ms | Allocations: 3088)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist, Workout must exist):
+  
+app/controllers/exercise_logs_controller.rb:9:in `create'
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:32:49 +0300
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameters: :user_id, :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f41a001be20>, params: {"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+Completed 422 Unprocessable Entity in 13ms (ActiveRecord: 0.4ms | Allocations: 3088)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist, Workout must exist):
+  
+app/controllers/exercise_logs_controller.rb:9:in `create'
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:32:50 +0300
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameters: :user_id, :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f4198008580>, params: {"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"user_id"=>2, "workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:9:in `create'
+Completed 422 Unprocessable Entity in 9ms (ActiveRecord: 0.3ms | Allocations: 3088)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist, Workout must exist):
+  
+app/controllers/exercise_logs_controller.rb:9:in `create'
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:35:00 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 1.1ms | Allocations: 36691)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument, Integer passed.):
+  
+app/controllers/exercise_logs_controller.rb:9:in `create'
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:35:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/kupa/Development/code/phase_4/phase_4_project_api/app/controllers/exercise_logs_controller.rb:9: syntax error, unexpected ',', expecting =>
+...!({user_id = session[:user_id],log_params})
+...                              ^
+):
+  
+app/controllers/exercise_logs_controller.rb:9: syntax error, unexpected ',', expecting =>
+app/controllers/exercise_logs_controller.rb:9: syntax error, unexpected ',', expecting =>
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:42:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f6fb8540158>, params: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 185ms (Views: 4.1ms | ActiveRecord: 2.9ms | Allocations: 66649)
+
+
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:43:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f68949bc950>, params: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 176ms (Views: 3.9ms | ActiveRecord: 2.6ms | Allocations: 66790)
+
+
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:44:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007f8bd09dbbe8>, params: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 180ms (Views: 4.7ms | ActiveRecord: 3.0ms | Allocations: 66672)
+
+
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:47:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007fd318541670>, params: {"workout_id"=>2, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>2, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ExerciseLogSerializer with ActiveModelSerializers::Adapter::Attributes (2.98ms)
+Completed 200 OK in 193ms (Views: 20.3ms | ActiveRecord: 2.9ms | Allocations: 70910)
+
+
+Started POST "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:47:50 +0300
+Processing by ExerciseLogsController#create as */*
+  Parameters: {"workout_id"=>3, "duration"=>30, "date"=>20230330, "exercise_log"=>{"workout_id"=>3, "duration"=>30, "date"=>20230330}}
+[31mUnpermitted parameter: :exercise_log. Context: { controller: ExerciseLogsController, action: create, request: #<ActionDispatch::Request:0x00007fd310017288>, params: {"workout_id"=>3, "duration"=>30, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"create", "exercise_log"=>{"workout_id"=>3, "duration"=>30, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mExerciseLog Create (0.5ms)[0m  [1m[32mINSERT INTO "exercise_logs" ("user_id", "workout_id", "duration", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 3], ["duration", 30], ["date", 20230330], ["created_at", "2023-03-30 12:47:51.031152"], ["updated_at", "2023-03-30 12:47:51.031152"]]
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (153.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:11:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ExerciseLogSerializer with ActiveModelSerializers::Adapter::Attributes (2.35ms)
+Completed 200 OK in 206ms (Views: 4.3ms | ActiveRecord: 161.0ms | Allocations: 19197)
+
+
+Started GET "/exercise_logs/2" for 127.0.0.1 at 2023-03-30 15:49:27 +0300
+Processing by ExerciseLogsController#show as */*
+  Parameters: {"workout_id"=>3, "duration"=>30, "date"=>20230330, "id"=>"2", "exercise_log"=>{"workout_id"=>3, "duration"=>30, "date"=>20230330}}
+  [1m[36mExerciseLog Load (0.2ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs" WHERE "exercise_logs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:20:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 404 Not Found in 8ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 1641)
+
+
+Started GET "/exercise_logs/1" for 127.0.0.1 at 2023-03-30 15:49:36 +0300
+Processing by ExerciseLogsController#show as */*
+  Parameters: {"workout_id"=>3, "duration"=>30, "date"=>20230330, "id"=>"1", "exercise_log"=>{"workout_id"=>3, "duration"=>30, "date"=>20230330}}
+  [1m[36mExerciseLog Load (0.4ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs" WHERE "exercise_logs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:20:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercise_logs_controller.rb:22:in `show'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercise_logs_controller.rb:22:in `show'
+[active_model_serializers] Rendered ExerciseLogSerializer with ActiveModelSerializers::Adapter::Attributes (10.67ms)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.9ms | Allocations: 3161)
+
+
+Started GET "/exercise_logs/1" for 127.0.0.1 at 2023-03-30 15:50:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExerciseLogsController#show as */*
+  Parameters: {"workout_id"=>3, "duration"=>30, "date"=>20230330, "id"=>"1", "exercise_log"=>{"workout_id"=>3, "duration"=>30, "date"=>20230330}}
+  [1m[36mExerciseLog Load (0.3ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs" WHERE "exercise_logs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:20:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercise_logs_controller.rb:22:in `show'
+[active_model_serializers]   [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercise_logs_controller.rb:22:in `show'
+[active_model_serializers] Rendered ExerciseLogSerializer with ActiveModelSerializers::Adapter::Attributes (40.84ms)
+Completed 200 OK in 214ms (Views: 76.3ms | ActiveRecord: 4.2ms | Allocations: 84882)
+
+
+Started PATCH "/exercise_logs/1" for 127.0.0.1 at 2023-03-30 15:51:03 +0300
+Processing by ExerciseLogsController#update as */*
+  Parameters: {"workout_id"=>3, "duration"=>60, "date"=>20230330, "id"=>"1", "exercise_log"=>{"workout_id"=>3, "duration"=>60, "date"=>20230330}}
+  [1m[36mExerciseLog Load (0.2ms)[0m  [1m[34mSELECT "exercise_logs".* FROM "exercise_logs" WHERE "exercise_logs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:30:in `update'
+[31mUnpermitted parameters: :id, :exercise_log. Context: { controller: ExerciseLogsController, action: update, request: #<ActionDispatch::Request:0x00007f524c0089d0>, params: {"workout_id"=>3, "duration"=>60, "date"=>20230330, "controller"=>"exercise_logs", "action"=>"update", "id"=>"1", "exercise_log"=>{"workout_id"=>3, "duration"=>60, "date"=>20230330}} }[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:31:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:31:in `update'
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:31:in `update'
+  [1m[36mExerciseLog Update (0.4ms)[0m  [1m[33mUPDATE "exercise_logs" SET "duration" = ?, "updated_at" = ? WHERE "exercise_logs"."id" = ?[0m  [["duration", 60], ["updated_at", "2023-03-30 12:51:03.316047"], ["id", 1]]
+  ↳ app/controllers/exercise_logs_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (75.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/exercise_logs_controller.rb:31:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ExerciseLogSerializer with ActiveModelSerializers::Adapter::Attributes (1.17ms)
+Completed 200 OK in 103ms (Views: 2.9ms | ActiveRecord: 76.7ms | Allocations: 5131)
+
+
+Started PATCH "/logout" for 127.0.0.1 at 2023-03-30 15:56:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PATCH] "/logout"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2023-03-30 15:57:12 +0300
+Processing by SessionsController#destroy as */*
+  Parameters: {"workout_id"=>3, "duration"=>60, "date"=>20230330, "session"=>{"workout_id"=>3, "duration"=>60, "date"=>20230330}}
+Completed 204 No Content in 65ms (ActiveRecord: 0.0ms | Allocations: 20783)
+
+
+Started GET "/exercise_logs" for 127.0.0.1 at 2023-03-30 15:57:57 +0300
+Processing by ExerciseLogsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 51ms (Views: 49.7ms | ActiveRecord: 0.6ms | Allocations: 6133)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-30 16:00:17 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "full_name":"yours truly",
+  "user_name":"yours",
+  "email":"yours@mail.com",
+  "password":your123
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/users_controller.rb:41:in `user_params'
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-03-30 16:02:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"full_name"=>"yours truly", "user_name"=>"yours", "email"=>"yours@mail.com", "password"=>"[FILTERED]", "user"=>{"user_name"=>"yours", "full_name"=>"yours truly", "email"=>"yours@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007ff91c5402f0>, params: {"full_name"=>"yours truly", "user_name"=>"yours", "email"=>"yours@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"user_name"=>"yours", "full_name"=>"yours truly", "email"=>"yours@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "full_name", "password_digest", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_name", "yours"], ["full_name", "yours truly"], ["password_digest", "[FILTERED]"], ["email", "yours@mail.com"], ["created_at", "2023-03-30 13:02:27.056642"], ["updated_at", "2023-03-30 13:02:27.056642"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (125.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 201 Created in 563ms (Views: 27.2ms | ActiveRecord: 128.0ms | Allocations: 42462)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-30 16:10:52 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"user_name"=>"yours", "password"=>"[FILTERED]", "session"=>{"user_name"=>"yours", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "yours"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 301ms (Views: 2.1ms | ActiveRecord: 1.3ms | Allocations: 1585)
+
+
+Started GET "/exercises" for 127.0.0.1 at 2023-03-30 16:11:06 +0300
+Processing by ExercisesController#index as */*
+  Parameters: {"user_name"=>"yours", "password"=>"[FILTERED]", "exercise"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mExercise Load (0.4ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers]   [1m[36mCACHE Workout Load (0.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/exercises_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (90.31ms)
+Completed 200 OK in 126ms (Views: 121.6ms | ActiveRecord: 4.5ms | Allocations: 59668)
+
+
