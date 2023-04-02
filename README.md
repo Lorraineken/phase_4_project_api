@@ -20,7 +20,7 @@ https://github.com/Lorraineken/phase_4_project_react
 3. Run `rails db:migrate db:seed` to create the necessary database tables and data.
 4. Start the server by running `rails server`.
 
-## Databse relationships
+## Databse Relationships
 
 * ExerciseLog belongs to one User and one Workout.
 * Exercise belongs to one Workout and has many ExerciseLogs.
